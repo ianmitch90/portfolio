@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Footer from './Footer'
-import NavBar from './NavBar'
+import Heading from './Header'
 
 export class Layout extends Component {
   constructor(){
@@ -12,7 +12,7 @@ export class Layout extends Component {
 
     return (
       <div>
-        <NavBar/>
+        <Heading/>
 
         {this.props.children}
         

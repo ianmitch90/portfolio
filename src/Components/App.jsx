@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
+import '../styles/css/App.css'
 import { Layout } from './Layout/Layout';
-
 import Landing from './Pages/Landing/Landing';
 import Contact from './Pages/Contact/Contact';
 import Profile from './Pages/Profile/Profile';
 import Social from './Pages/Social/Social';
 import Developer from './Pages/Developer/Developer';
 import NoMatch from './Pages/NoMatch/NoMatch'
-import './App.css';
+
 
 class App extends Component {
 

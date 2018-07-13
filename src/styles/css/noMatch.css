@@ -1,0 +1,29 @@
+h1 {
+  font-size: 15em;
+  font-family: "Megrim", cursive;
+}
+
+h2 {
+  font-size: 5em;
+  font-family: "Megrim", cursive;
+}
+
+.NoMatchContainer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #353b48;
+}
+
+.NoMatchHeadline {
+  color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 50vh;
+}
+
+/*# sourceMappingURL=noMatch.css.map */
