@@ -25,7 +25,7 @@ let failReplyArray = [
   'Sometimes, its the thought that counts!', 
   'Geez! can i ask Jeevs still?',
   ]
-let failReply = failReplyArray[Math.floor(Math.random() * failArray.length)]
+let failReply = failReplyArray[Math.floor(Math.random() * failReplyArray.length)]
 
 
 
