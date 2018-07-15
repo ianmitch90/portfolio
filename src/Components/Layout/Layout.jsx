@@ -3,9 +3,7 @@ import Footer from './Footer'
 import Heading from './Header'
 
 export class Layout extends Component {
-  constructor(){
-    super()
-  }
+
 
   render() {
 
