@@ -3,6 +3,7 @@
 h1{
     font-size: 15em;
     font-family: 'Megrim', cursive;
+
 }
 h2{
     font-size: 5em;
@@ -17,12 +18,13 @@ h2{
     background-color: #353b48;
 }
 
-.NoMatchHeadline{
+.nomatch{
     color: #f5f6fa;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 50vh;
+
 }
+

@@ -33,12 +33,13 @@ export class NoMatch extends Component {
   render() {
     return (
       <div className= 'NoMatchContainer' style= {styles}>
-        <div className= 'NoMatchHeadline'>
-        <h1 className='flicker-1'>404</h1>
-        <h2>Page Not Found</h2>
-        <br/>
-       {failReply} 
-
+        <div className='nomatch'>
+          <div className= 'NoMatchHeadline'>
+            <h1 className='flicker-1'>404</h1>
+            <h2>Page Not Found</h2>
+            <br/>
+            {failReply} 
+         </div>
         </div>
       </div>
     )

@@ -12,6 +12,10 @@ html,
   font-family: "Poiret One", cursive;
 }
 
+h1, h2 {
+  margin: 0;
+}
+
 .flicker-1 {
   -webkit-animation: flicker-1 2s linear infinite both;
   animation: flicker-1 2s linear infinite both;
