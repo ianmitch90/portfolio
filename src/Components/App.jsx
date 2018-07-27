@@ -5,10 +5,6 @@ import { Layout } from './Layout/Layout';
 import Spinner from './Spinner'
 import Loadable from 'react-loadable'
 
-
-
-
-
 const Landing = Loadable({
   loader: () => import ('./Pages/Landing/Landing'),
   loading: Spinner,
@@ -44,8 +40,8 @@ class App extends Component {
   render() {
     return (
       <div className="AppContainer appBG">
-       <Layout>
-         <BrowserRouter>
+      <BrowserRouter>
+        <Layout>
          <Switch>
            <Route exact path='/' component={Landing}/>
            <Route path='/contact' component={Contact}/>
@@ -54,8 +50,8 @@ class App extends Component {
            <Route path='/profile' component={Profile}/>
            <Route component= {NoMatch}/>
          </Switch>
-         </BrowserRouter>
-       </Layout>
+        </Layout>
+      </BrowserRouter>
       </div>
     );
   }
