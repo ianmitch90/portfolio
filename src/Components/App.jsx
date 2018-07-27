@@ -3,11 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import '../styles/css/App.css'
 import { Layout } from './Layout/Layout';
 import Spinner from './Spinner'
-import Contact from './Pages/Contact/Contact';
-import Profile from './Pages/Profile/Profile';
-import Social from './Pages/Social/Social';
-import Developer from './Pages/Developer/Developer';
-import NoMatch from './Pages/NoMatch/NoMatch'
 import Loadable from 'react-loadable'
 
 
@@ -16,6 +11,31 @@ import Loadable from 'react-loadable'
 
 const Landing = Loadable({
   loader: () => import ('./Pages/Landing/Landing'),
+  loading: Spinner,
+});
+
+const Contact = Loadable({
+  loader: () => import('./Pages/Contact/Contact'),
+  loading: Spinner,
+});
+
+const Profile = Loadable({
+  loader: () => import('./Pages/Profile/Profile'),
+  loading: Spinner,
+});
+
+const Developer = Loadable({
+  loader: () => import('./Pages/Developer/Developer'),
+  loading: Spinner,
+});
+
+const Social = Loadable({
+  loader: () => import('./Pages/Social/Social'),
+  loading: Spinner,
+});
+
+const NoMatch = Loadable({
+  loader: () => import('./Pages/NoMatch/NoMatch'),
   loading: Spinner,
 });
 

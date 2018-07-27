@@ -29,9 +29,10 @@ const Page = ({ offset, caption, first, second, third, fourth, fifth, sixth, gra
         <p>{sixth}</p>
       </span>
     </Parallax.Layer>
-   
   </React.Fragment>
 )
+
+
 
 
 export class Landing extends Component {
@@ -42,6 +43,7 @@ export class Landing extends Component {
       <div className= 'landingContainer'>
           <Parallax className='heroBackground' ref={ref => (this.parallax = ref)} pages={2}>
           <ParallaxLayer className='heroText' offset={0.1} speed={0} >
+              
               <ParallaxLayer offset={0.1} speed={4.5}>
                 <h1>Ian</h1>
               </ParallaxLayer>

@@ -9,6 +9,7 @@
 
 .Landing h1 {
   margin: 0;
+  font-size: 20vh;
 }
 
 .heroText {
@@ -96,7 +97,7 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* STYLES GO HERE */
   .Landing h1 {
-    font-size: 5em;
+    font-size: 10vh;
   }
 
   .number {
