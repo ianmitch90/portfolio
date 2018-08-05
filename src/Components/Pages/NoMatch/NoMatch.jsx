@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../../../styles/css/noMatch.css'
+import './noMatch.css'
 let failArray = [
 'https://thumbs.gfycat.com/ExaltedAccomplishedHornedtoad-size_restricted.gif',
 'https://thumbs.gfycat.com/AstonishingDentalGermanspitz-size_restricted.gif',

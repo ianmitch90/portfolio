@@ -1,0 +1,156 @@
+.heroBackground {
+  background-image: url("../../../Assets/images/jazmin-quaynor-97777-unsplash.jpg"), linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay;
+  color: white;
+}
+
+.Landing h1 {
+  margin: 0;
+  font-size: 13rem;
+  font-family: 'Megrim', cursive;
+}
+
+.heroText {
+  text-align: center;
+}
+
+.container > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  pointer-events: none;
+  justify-content: start !important;
+  line-height: 0px;
+  text-transform: uppercase;
+}
+
+.number {
+  font-size: 450px;
+  color: #373c4c;
+}
+
+.number span {
+  display: inline-block;
+  position: relative;
+  transform: translate3d(-35%, 0, 0);
+}
+
+.header {
+  margin-left: 350px;
+  font-size: 70px;
+  color: white;
+}
+
+.stripe {
+  height: 2px;
+  width: auto;
+}
+
+.slopeBegin {
+  background-color: #20232f;
+  clip-path: polygon(20vw 0, 70% 0, calc(70% - 20vw) 100%, 0 100%);
+}
+
+.slopeEnd {
+  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%);
+}
+
+.slopeBegin,
+.slopeEnd {
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.pink {
+  background: linear-gradient(to right, deeppink 0%, coral 100%);
+}
+
+.teal {
+  background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+}
+
+.tomato {
+  background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+.algae {
+  background: linear-gradient(to right, #0097e6 0%, #44bd32 100%);
+}
+
+.lavender {
+  background: linear-gradient(to right, #dcdde1 0%, #8c7ae6 100%);
+}
+
+/*
+font-family: 'Poiret One', cursive; default
+font-family: 'Megrim', cursive;     H1 H2
+font-family: 'Waiting for the Sunrise', cursive;  accents 
+*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 480px) {
+  /* STYLES GO HERE */
+  .Landing h1 {
+    font-size: 5rem;
+    
+  }
+
+  .number {
+    font-size: 180px;
+    color: #373c4c;
+  }
+
+  .header {
+    margin-left: 30px;
+    font-size: 2em;
+    color: white;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* STYLES GO HERE */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* STYLES GO HERE */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* STYLES GO HERE */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* STYLES GO HERE */
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* STYLES GO HERE */
+}
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* STYLES GO HERE */
+}
+/* iPhone 5 (landscape)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+/* iPhone 5 (portrait)----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+}
+
+/*# sourceMappingURL=Landing.css.map */

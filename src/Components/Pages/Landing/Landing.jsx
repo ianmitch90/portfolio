@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../../../styles/css/Landing.css'
+import './Landing.css'
 import { Parallax, ParallaxLayer } from 'react-spring'
 
 
@@ -40,30 +40,35 @@ export class Landing extends Component {
   render() {
     return (
       <div className= 'Landing'>
-      <div className= 'landingContainer'>
-          <Parallax className='heroBackground' ref={ref => (this.parallax = ref)} pages={2}>
-          <ParallaxLayer className='heroText' offset={0.1} speed={0} >
-              
-              <ParallaxLayer offset={0.1} speed={4.5}>
-                <h1>Ian</h1>
-              </ParallaxLayer>
+        <div className= 'landingContainer'>
+        
+            <Parallax className='heroBackground' ref={ref => (this.parallax = ref)} pages={2}>
 
-              <ParallaxLayer offset={0.3} speed={2}>
-                <h1>Mitchell</h1>
-              </ParallaxLayer>
-          </ParallaxLayer>
+            <ParallaxLayer className='heroText' offset={0.1} speed={0} >
+                
+                <ParallaxLayer offset={0.1} speed={4.5}>
+                  <h1>Ian</h1>
+                </ParallaxLayer>
 
-          <ParallaxLayer offset={1}>
-              <Parallax className="container" ref="parallax" pages={5} horizontal scrolling={true}>
-                 <Page className="imgME" offset={0} gradient="pink" caption="Who I Am" first="Ian Mitchell" second="Developer" third="&" fourth="Designer" onClick={() => this.scroll(1)} />
-                  <Page offset={1} gradient="teal" caption="What I Do" first="" second="Development" third="Education" fourth="Freelance" onClick={() => this.scroll(2)} />
-                  <Page offset={2} gradient="tomato" caption="Web Development Specialties" first="Jr Full Stack Dev" second="JS/HTML/CSS/C#" third="Mongo/PostSQL" fourth="React/Redux/MERN"onClick={() => this.scroll(3)} />
-                <Page offset={3} gradient="algae" caption="Education" first="University" second="of Houston" third="Computer Science " fourth="- Current" fifth ="The Iron Yard" sixth="Full Stack - 2017"onClick={() => this.scroll(4)} />
-                  <Page offset={4} gradient="lavender" caption="Contact Me" first="ContactFormButton" second="Linkedn" third="GitHub" fourth="DetailedInfo" onClick={() => this.scroll(0)} />
-                  </Parallax>
-          </ParallaxLayer>
-      </Parallax>
-      </div>
+                <ParallaxLayer offset={0.3} speed={2}>
+                  <h1>Mitchell</h1>
+                </ParallaxLayer>
+            </ParallaxLayer>
+
+            <ParallaxLayer offset={1}>
+                <Parallax className="container" ref="parallax" pages={5} horizontal scrolling={true}>
+                    <Page className="imgME" offset={0} gradient="pink" caption="Who I Am" first="Ian Mitchell" second="Developer" third="&" fourth="Designer" onClick={() => this.scroll(1)}/>
+                    <Page offset={1} gradient="teal" caption="What I Do" first="" second="Development" third="Education" fourth="Freelance" onClick={() => this.scroll(2)} />
+                    <Page offset={2} gradient="tomato" caption="Web Development Specialties" first="Jr Full Stack Dev" second="JS/HTML/CSS/C#" third="Mongo/PostSQL" fourth="React/Redux/MERN"onClick={() => this.scroll(3)}/>
+                  <Page offset={3} gradient="algae" caption="Education" first="University" second="of Houston" third="Computer Science " fourth="- Current" fifth ="The Iron Yard" sixth="Full Stack - 2017"onClick={() => this.scroll(4)}/>
+                    <Page offset={4} gradient="lavender" caption="Contact Me" first="Visit my" second="Contact Page" third="For More" fourth="Information!" onClick={() => this.scroll(0)}/>
+                    </Parallax>
+            </ParallaxLayer>
+
+
+           
+        </Parallax>
+        </div>
       </div>
     )
   }

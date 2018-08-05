@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import '../styles/css/App.css'
+import '../Assets/styles/App.css'
 import { Layout } from './Layout/Layout';
 import Spinner from './Spinner'
 import Loadable from 'react-loadable'
@@ -39,7 +39,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="AppContainer appBG">
+      <div className="AppContainer">
       <BrowserRouter>
         <Layout>
          <Switch>
