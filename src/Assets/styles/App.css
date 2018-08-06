@@ -2,6 +2,7 @@
 font-family: 'Poiret One', cursive; default
 font-family: 'Megrim', cursive;     H1 H2
 font-family: 'Waiting for the Sunrise', cursive;  accents 
+
 */
 .loader {
   color: #ffffff;
@@ -21,18 +22,29 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
 }
 
 .navigation {
-  display: flex;
-  justify-content: center;
   background-color: #2f3640;
+
 }
-.navigation span {
-  font-family: "Waiting for the Sunrise", cursive;
+.navContainer{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
 }
+
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* STYLES GO HERE */
+@media only screen and (max-device-width: 480px) {
+  .navigation a {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%
+  }
+
+  .navContainer{
+    
+  }
 }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {

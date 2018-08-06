@@ -1,3 +1,6 @@
+/* so as a rough draft ive set up a view where there are angled reveals to the fixed background appart from the sectioned background content allowing for a more intresting experience
+
+however: using css for this in react is taxing on the render and causes jank with throttled performance, ill be revising this experience in my performance/test round*/
 
 .profile{
     height: 100%;
@@ -6,6 +9,7 @@
     background-attachment: fixed;
 }
 .profileHero {
+    padding-top: 4rem;
     background-image: url('../../../Assets/images/jeremy-galliani-505876-unsplash.jpg');
     background-color: #8c7ae6;
     background-blend-mode: multiply;
@@ -16,7 +20,7 @@
     height: 100vh;
     padding-bottom: 5rem;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 1em;
     align-items: center;
     color: white;
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
@@ -29,10 +33,10 @@
 
 }
 .picContainer{
-    padding: 1em;
+    padding: 1rem;
 }
 .profileDesc{
-
+    padding: 1rem;
 }
 .myPic {
     height: 15rem;
@@ -59,4 +63,77 @@
 
 .intrestHero{
 
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (max-device-width: 480px) {
+    .profileHero{
+        flex-direction: column-reverse;
+    }
+    .profileDesc{
+            margin: 2rem;
+            padding: 1rem;
+            text-align: center;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    /* STYLES GO HERE */
+}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    /* STYLES GO HERE */
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* STYLES GO HERE */
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* STYLES GO HERE */
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    /* STYLES GO HERE */
+}
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    /* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait &amp; landscape)----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    /* STYLES GO HERE */
+}
+
+/* iPhone 5 (landscape)----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    /* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait)----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    /* STYLES GO HERE */
 }

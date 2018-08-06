@@ -1,11 +1,15 @@
+/* so this is me working WITH the content since i know the background image is changes its look due to the screen width i just keep the content to the left and let the background image be my compass, only pushing the information in the areas that i need it to be. less is more sometimes and the views are somewhat consistant without too much styling. */
+
 .contactContainer {
-    height: 100vh;
     background-image: url('../../../Assets/images/everygirlboss-com-630548-unsplash.jpg');
     background-color: #dcdde1;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+   
     
 }
 
@@ -13,3 +17,30 @@
     font-family: 'Waiting for the Sunrise', cursive;
     font-size: 5rem;
 }
+
+.contactContainer h2 {
+    font-size: 2rem;
+    font-family: 'Megrim', cursive; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+
+}
+
+p, a {
+    font-size: 1rem;
+}
+
+.contactButtonsContainer {
+    margin-top: 5px;
+
+}
+
+.contactMain{
+   margin-left: 1rem;
+   width: 50%;
+   height: 100vh;
+}
+
+
+
