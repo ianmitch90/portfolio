@@ -6,8 +6,10 @@ export class Social extends Component {
       <div className='socialContainer topographyGradient'>
         <div className='socialButtonsContainer'>
           <div className='socialHeroImage'>
-            <div className='heroText'>
+            <div className='socialHeroText'>
                 <h1>Follow <br/> My <br/> Journey!</h1>
+                
+                
             </div>
           </div>
         </div>
