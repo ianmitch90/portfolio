@@ -7,9 +7,12 @@ import codingIcon from './svg/coding.svg'
 import dataIcon from './svg/data.svg'
 import serverIcon from './svg/hosting.svg'
 import settingIcon from './svg/setting.svg'
+import schoolIcon from './svg/school.svg'
+import certificateIcon from './svg/certificate.svg'
+import designIcon from './svg/stationery.svg'
+import devCodeIcon from './svg/web-design.svg'
 
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
-
 
 
 
@@ -87,14 +90,18 @@ export class Developer extends Component {
             <h2>& Projects</h2>
           </Parallax.Layer>
         </Parallax.Layer>
-
+        
 
         <Parallax.Layer
-          offset={1}
+          className= 'languagesContainer'
+          offset={.7}
           speed={0.1}
           onClick={() => this.parallax.scrollTo(2)}
-          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <img alt='' src={url('bash')} style={{ width: '40%' }} />
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+          <img alt='' src={devCodeIcon}/>
+          <h1>Languages:</h1>
+
+          
         </Parallax.Layer>
 
         <Parallax.Layer
