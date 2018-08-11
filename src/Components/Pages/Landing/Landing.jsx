@@ -17,7 +17,7 @@ const Page = ({ offset, caption, first, second, third, fourth, fifth, sixth, gra
       <span>0{offset + 1}</span>
     </Parallax.Layer>
 
-    <Parallax.Layer className="text header" offset={offset} speed={0.4}>
+    <Parallax.Layer className="text landingSlideHeader" offset={offset} speed={0.4}>
       <span>
         <p style={{ fontSize: 20 }}>{caption}</p>
         <div className={`stripe ${gradient}`} />

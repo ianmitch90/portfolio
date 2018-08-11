@@ -18,9 +18,9 @@ Running and installing app:
 
 To install and update node packages:
 
-'''
+```
 yarn
-'''
+```
 
 To start the Project localy in development enviorment:
 ```
