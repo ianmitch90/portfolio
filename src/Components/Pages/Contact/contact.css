@@ -30,7 +30,7 @@
 .goButtonGreen {
     background-color: #2AF598;
 }
-p, a {
+.contactContainer p, a {
     font-size: 1rem;
 }
 

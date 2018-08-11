@@ -8,7 +8,6 @@ export class Social extends Component {
           <div className='socialHeroImage'>
             <div className='socialHeroText'>
                 <h1>Follow <br/> My <br/> Journey!</h1>
-                TRAVIS SHOULD WORK NOW
             </div>
           </div>
         </div>
