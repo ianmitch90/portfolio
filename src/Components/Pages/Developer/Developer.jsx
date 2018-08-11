@@ -53,8 +53,8 @@ export class Developer extends Component {
           <img alt='' src={settingIcon} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
         </Parallax.Layer>
 
-        <Parallax.Layer offset={3} speed={-0.1} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-          <div className='arcadeImg'/>
+          <Parallax.Layer offset={3} speed={-0.2} className='devWorkBG' style={{ pointerEvents: 'none' }}>
+      
         </Parallax.Layer>
 
         <Parallax.Layer
