@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 import './developer.css'
-import {Parallax, ParallaxLayer} from 'react-spring'
+import {Parallax} from 'react-spring'
 import algorithmIcon from './svg/algorithm.svg'
 import browserIcon from './svg/browser.svg'
 import codingIcon from './svg/coding.svg'
 import dataIcon from './svg/data.svg'
 import serverIcon from './svg/hosting.svg'
 import settingIcon from './svg/setting.svg'
-import schoolIcon from './svg/school.svg'
-import certificateIcon from './svg/certificate.svg'
-import designIcon from './svg/stationery.svg'
 import devCodeIcon from './svg/web-design.svg'
 
-const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
 
 
 
@@ -26,7 +22,6 @@ export class Developer extends Component {
         
         <Parallax.Layer offset={1} speed={1} className='devMiddleBG' />
         <Parallax.Layer offset={2} speed={1} className='devBottomBG' />
-
         <Parallax.Layer offset={0} speed={0} factor={3} className='devScreenBG' />
 
 
@@ -61,14 +56,12 @@ export class Developer extends Component {
         </Parallax.Layer>
 
         <Parallax.Layer
-          offset={2}
-          speed={-0.3}
-          style={{
-            backgroundSize: '80%',
-            backgroundPosition: 'center',
-            backgroundImage: url('clients', true)
-          }}
-        />
+            offset={2}
+            speed={1}>
+            <h1>Education & Experience:</h1>
+
+
+        </Parallax.Layer>
 
         <Parallax.Layer 
           offset={0}
@@ -109,7 +102,9 @@ export class Developer extends Component {
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           onClick={() => this.parallax.scrollTo(0)}>
-          <img alt='' src={url('clients-main')} style={{ width: '40%' }} />
+          <Parallax.Layer>
+            h1
+          </Parallax.Layer>
         </Parallax.Layer>
 
       </Parallax>
