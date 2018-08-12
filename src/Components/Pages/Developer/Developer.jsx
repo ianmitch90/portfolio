@@ -57,11 +57,16 @@ export class Developer extends Component {
         <Parallax.Layer
             offset={2}
             speed={1}>
+            <div className='eduExpBackground'>
             <h1>Education & Experience:</h1>
-            <h2>The Iron Yard - Fullstack Web Development Bootcamp</h2>
-            <p>I went to the Iron Yard to become a full stack developer, and chose to specialize in react towards the end of the course. <br/> There I learned the MERN STACK and all of the skills I have today as a great foundation for a modern Web Developer. <br/> Also, they are like my dev family.</p>
-            <h2>Trilogy Education Services - Teaching Assistant</h2>
-            <p>Part of the instructional staff of the UT Austin Web Development program, where i am a Teaching Assistant/Co Instructor. <br/> Helping students debug, learn all the skills they need to become excellent developers from soft skills to technical. <br/> This would be my THIRD cohort helping and guiding my students who have become my awesome peers!</p>
+              <div className='eduExpDesc'>
+                <h2>The Iron Yard - Fullstack Web Development Bootcamp</h2>
+                <p>I went to the Iron Yard to become a full stack developer, and chose to specialize in react towards the end of the course. <br/> There I learned the MERN STACK and all of the skills I have today as a great foundation for a modern Web Developer. <br/> Also, they are like my dev family.</p>
+                <h2>Trilogy Education Services - Teaching Assistant</h2>
+                <p>Part of the instructional staff of the UT Austin Web Development program, where i am a Teaching Assistant/Co Instructor. <br/> Helping students debug, learn all the skills they need to become excellent developers from soft skills to technical. <br/> This would be my THIRD cohort helping and guiding my students who have become my awesome peers!</p>
+              </div>
+            </div>
+
         </Parallax.Layer>
 
         <Parallax.Layer 
@@ -115,7 +120,6 @@ export class Developer extends Component {
               speed={1}
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
             <h1>Projects:</h1>
-            <h2>Things I have Worked on or am Currently working on</h2>
             <Projects/>
             
           
