@@ -8,9 +8,8 @@ import dataIcon from './svg/data.svg'
 import serverIcon from './svg/hosting.svg'
 import settingIcon from './svg/setting.svg'
 import devCodeIcon from './svg/web-design.svg'
-
-
-
+import DevIconsContainer from './DevIconsContainer'
+import Projects from './Projects'
 
 export class Developer extends Component {
 
@@ -59,8 +58,10 @@ export class Developer extends Component {
             offset={2}
             speed={1}>
             <h1>Education & Experience:</h1>
-
-
+            <h2>The Iron Yard - Fullstack Web Development Bootcamp</h2>
+            <p>I went to the Iron Yard to become a full stack developer, and chose to specialize in react towards the end of the course. <br/> There I learned the MERN STACK and all of the skills I have today as a great foundation for a modern Web Developer. <br/> Also, they are like my dev family.</p>
+            <h2>Trilogy Education Services - Teaching Assistant</h2>
+            <p>Part of the instructional staff of the UT Austin Web Development program, where i am a Teaching Assistant/Co Instructor. <br/> Helping students debug, learn all the skills they need to become excellent developers from soft skills to technical. <br/> This would be my THIRD cohort helping and guiding my students who have become my awesome peers!</p>
         </Parallax.Layer>
 
         <Parallax.Layer 
@@ -89,12 +90,17 @@ export class Developer extends Component {
           className= 'languagesContainer'
           offset={.7}
           speed={0.1}
-          onClick={() => this.parallax.scrollTo(2)}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
           <img alt='' src={devCodeIcon}/>
           <h1>Languages:</h1>
 
-          
+        </Parallax.Layer>
+        <Parallax.Layer
+          onClick={() => this.parallax.scrollTo(2)}
+          offset={1.1}
+          speed={0.1}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>>
+            <DevIconsContainer/>
         </Parallax.Layer>
 
         <Parallax.Layer
@@ -102,11 +108,18 @@ export class Developer extends Component {
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           onClick={() => this.parallax.scrollTo(0)}>
-          <Parallax.Layer>
-            h1
-          </Parallax.Layer>
         </Parallax.Layer>
 
+          <Parallax.Layer
+              offset={3}
+              speed={1}
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+            <h1>Projects:</h1>
+            <h2>Things I have Worked on or am Currently working on</h2>
+            <Projects/>
+            
+          
+          </Parallax.Layer>
       </Parallax>
 
       
