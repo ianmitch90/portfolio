@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import csharpIcon from '../../../Assets/devicons/csharp-line.svg'
 import cssIcon from '../../../Assets/devicons/css3-original.svg'
 import dockerIcon from '../../../Assets/devicons/docker-original.svg'
@@ -27,7 +26,7 @@ import sequalizeIcon from '../../../Assets/devicons/sequelize-original.svg'
 // use this dumb component to organize import and send off a full list of svgs to use for develop.jsx 
 
 
-function DevLanguages() {
+function DevIconsContainer() {
     return (
         <div className='devLanguagesIcons'>
             <div className="col-xs-12">
@@ -68,8 +67,5 @@ function DevLanguages() {
     );
 }
 
-DevLanguages.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
 
-export default (DevLanguages);
+export default (DevIconsContainer);

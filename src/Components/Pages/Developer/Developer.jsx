@@ -8,7 +8,7 @@ import dataIcon from './svg/data.svg'
 import serverIcon from './svg/hosting.svg'
 import settingIcon from './svg/setting.svg'
 import devCodeIcon from './svg/web-design.svg'
-import DevLanguages from './DevLanguages'
+import DevIconsContainer from './DevIconsContainer'
 import Projects from './Projects'
 
 export class Developer extends Component {
@@ -100,7 +100,7 @@ export class Developer extends Component {
           offset={1.1}
           speed={0.1}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>>
-            <DevLanguages/>
+            <DevIconsContainer/>
         </Parallax.Layer>
 
         <Parallax.Layer
