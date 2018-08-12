@@ -21,18 +21,18 @@ export class Social extends Component {
           <div className='socialIconsContainer'>
             <div className='socialRow'>
               <Button href='https://twitter.com/TheShadyGaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                  <img src={Twitter}/>
+                  <img alt='twiter logo' src={Twitter}/>
                 </Button>
               <Button href='https://www.twitch.tv/theshadygaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                  <img src={Twitch}/>
+                  <img alt='twitch logo' src={Twitch}/>
                 </Button>
             </div>
             <div className='socialRow'>
               <Button href='https://medium.com/@ianmitch90' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                  <img src={Medium}/>
+                  <img alt='medium logo' src={Medium}/>
                 </Button>
               <Button href='https://github.com/ianmitch90/' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                  <img src={Github}/>
+                  <img alt='github logo' src={Github}/>
                 </Button>
             </div>
           </div>
