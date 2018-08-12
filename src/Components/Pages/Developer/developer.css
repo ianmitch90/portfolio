@@ -26,9 +26,20 @@
     clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
 
 }
-
+.devLanguagesIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .languagesContainer img {
-    height: 5rem;
+    height: 10rem;
+}
+
+.devLanguagesIcons img {
+    height: 6em;
+    margin: 1em;
+
 }
 
 .devMainBG {
