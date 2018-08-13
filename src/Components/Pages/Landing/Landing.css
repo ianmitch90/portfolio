@@ -100,7 +100,6 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   /* STYLES GO HERE */
   .Landing h1 {
     font-size: 5rem;
-    
   }
 
   .number {
@@ -108,7 +107,7 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
     color: #373c4c;
   }
 
-  .header {
+  .landingSlideHeader {
     margin-left: 30px;
     font-size: 2em;
     color: white;
