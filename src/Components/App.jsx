@@ -25,10 +25,6 @@ const Developer = Loadable({
   loading: Spinner,
 });
 
-const Social = Loadable({
-  loader: () => import('./Pages/Social/Social'),
-  loading: Spinner,
-});
 
 const NoMatch = Loadable({
   loader: () => import('./Pages/NoMatch/NoMatch'),
@@ -45,7 +41,6 @@ class App extends Component {
          <Switch>
            <Route exact path='/' component={Landing}/>
            <Route path='/contact' component={Contact}/>
-           <Route path='/social' component={Social}/>
            <Route path='/developer' component={Developer}/>
            <Route path='/profile' component={Profile}/>
            <Route component= {NoMatch}/>

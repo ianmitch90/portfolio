@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import { Face, Home, Code, Forum, Public } from '@material-ui/icons/'
+import { Face, Home, Code, Forum } from '@material-ui/icons/'
 
 const styles = theme => ({
   button: {
@@ -35,9 +35,6 @@ function OutlinedButtons(props) {
         <Forum/>
       </Button>
 
-      <Button component={Link} to='/social'  color="secondary" className={classes.button}>
-        <Public/>
-      </Button>
       </div>
 
 

@@ -80,13 +80,13 @@ export class Developer extends Component {
             offset={0.1}
             speed={0.2}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <h2>My Skills, Growth</h2>
+            <h2>My Skills, Exp, & Projects</h2>
           </Parallax.Layer>
           <Parallax.Layer 
             offset={0.2}
             speed={0.3}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <h2>& Projects</h2>
+            <h2>- Tap/Swipe to Begin -</h2>
           </Parallax.Layer>
         </Parallax.Layer>
         
@@ -104,7 +104,7 @@ export class Developer extends Component {
           onClick={() => this.parallax.scrollTo(2)}
           offset={1.1}
           speed={0.1}
-          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>>
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <DevIconsContainer/>
         </Parallax.Layer>
 
@@ -112,7 +112,7 @@ export class Developer extends Component {
           offset={2}
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-          onClick={() => this.parallax.scrollTo(0)}>
+          onClick={() => this.parallax.scrollTo(3)}>
         </Parallax.Layer>
 
           <Parallax.Layer
@@ -121,8 +121,7 @@ export class Developer extends Component {
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
             <h1>Projects:</h1>
             <Projects/>
-            
-          
+            <h2 onClick={() => this.parallax.scrollTo(0)}>-Back to Top-</h2>
           </Parallax.Layer>
       </Parallax>
 
