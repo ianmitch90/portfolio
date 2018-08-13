@@ -4,7 +4,7 @@
 }
 .devContainer h1 {
     margin: 0;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Megrim', cursive;
 }
 .devContainer h2 {
@@ -26,29 +26,32 @@
     clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
 
 }
+
 .devLanguagesIcons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .languagesContainer img {
-    height: 10rem;
+    height: 5rem;
 }
 
 .devLanguagesIcons img {
-    height: 6em;
+    height: 5em;
     margin: 1em;
 
 }
 .eduExpDesc,
 .eduExpDesc p {
     margin: 1rem;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.eduExpDesc p {
-    font-size: 2rem;
-}
+
 .eduExpBackground {
     background-image: linear-gradient(30deg, #353b48 0%, #273c75 100%);
     opacity: 0.8;

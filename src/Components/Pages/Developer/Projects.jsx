@@ -37,7 +37,7 @@ function Projects(props) {
             Whats Shaking?
           </Typography>
           <Typography>
-            <p>An React app that uses data from the U.S. Geological Survay API to show you the most recent seismic activity.</p>
+            <p>Use U.S. Geological Survay API to show you the most recent seismic activity.</p>
           </Typography>
         </CardContent>
         <CardActions>

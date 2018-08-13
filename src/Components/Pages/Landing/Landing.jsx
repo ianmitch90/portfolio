@@ -57,7 +57,7 @@ export class Landing extends Component {
 
             <ParallaxLayer offset={1}>
                 <Parallax className="container" ref="parallax" pages={5} horizontal scrolling={true}>
-                    <Page className="imgME" offset={0} gradient="pink" caption="Who I Am" first="Ian Mitchell" second="Developer" third="&" fourth="Designer" onClick={() => this.scroll(1)}/>
+                    <Page className="imgME" offset={0} gradient="pink" caption="Who I Am" first='Developer' second="&" third="Designer" fourth="-Tap or Swipe-" onClick={() => this.scroll(1)}/>
                     <Page offset={1} gradient="teal" caption="What I Do" first="" second="Development" third="Education" fourth="Freelance" onClick={() => this.scroll(2)} />
                     <Page offset={2} gradient="tomato" caption="Web Development Specialties" first="Jr Full Stack Dev" second="JS/HTML/CSS/C#" third="Mongo/PostSQL" fourth="React/Redux/MERN"onClick={() => this.scroll(3)}/>
                   <Page offset={3} gradient="algae" caption="Education" first="University" second="of Houston" third="Computer Science " fourth="- Current" fifth ="The Iron Yard" sixth="Full Stack - 2017"onClick={() => this.scroll(4)}/>
