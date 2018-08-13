@@ -63,12 +63,18 @@ however: using css for this in react is taxing on the render and causes jank wit
 
 @media only screen and (max-device-width: 480px) {
     .profileHero{
-        flex-direction: column-reverse;
+        
     }
     .profileDesc{
             margin: 2rem;
             padding: 1rem;
             text-align: center;
+    }
+    .socialButtons a {
+        margin: 5px;
+    }
+    .profileHero h1 {
+        font-size: 2rem;
     }
 }
 
