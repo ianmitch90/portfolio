@@ -6,7 +6,7 @@ however: using css for this in react is taxing on the render and causes jank wit
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 110vh;
+    height: 150vh;
     background-image: url('../../../Assets/images/coffee.jpeg'),
     linear-gradient(30deg, #338ed8 0%, #2cbb68 74%);
     background-blend-mode: multiply;
@@ -62,9 +62,7 @@ however: using css for this in react is taxing on the render and causes jank wit
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (max-device-width: 480px) {
-    .profileHero{
-        
-    }
+
     .profileDesc{
             margin: 2rem;
             padding: 1rem;
