@@ -155,3 +155,30 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   /* STYLES GO HERE */
 }
 
+.blink {
+  -webkit-animation: blink 4s infinite both;
+  animation: blink 4s infinite both;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
