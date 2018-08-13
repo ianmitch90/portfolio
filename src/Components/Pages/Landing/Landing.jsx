@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './Landing.css'
+import Button from '@material-ui/core/Button';
+import { ExpandMore } from '@material-ui/icons/'
 import { Parallax, ParallaxLayer } from 'react-spring'
 
 
@@ -52,7 +54,15 @@ export class Landing extends Component {
 
                 <ParallaxLayer offset={0.3} speed={2}>
                   <h1>Mitchell</h1>
+                  <Button 
+                  className='CTA blink'
+                  variant='fab' 
+                  color='secondary'
+                  onClick={() => this.parallax.scrollTo(1)}>
+                    <ExpandMore/>
+                  </Button>
                 </ParallaxLayer>
+                
             </ParallaxLayer>
 
             <ParallaxLayer offset={1}>
