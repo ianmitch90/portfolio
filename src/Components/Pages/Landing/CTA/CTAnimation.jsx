@@ -23,9 +23,10 @@ class CallToSwipe extends React.PureComponent {
       this.state.items.map((_, i) => (
         <animated.svg
         className='arrows'
+        key={i}
         style={{
-            width: 25,
-            height: 25 ,
+            width: 55,
+            height: 55 ,
             willChange: 'transform',
             transform: radians.interpolate(r => `translate3d(${1.4 * Math.sin(r + i * 2 * Math.PI / 5)}px, 0, 0)`)
           }}
@@ -63,9 +64,10 @@ export default class Trailing extends React.PureComponent {
       this.state.items.map((_, i) => (
         <animated.svg
         className='arrows'
+        key={i}
         style={{
-            width: 25,
-            height: 25 ,
+            width: 40,
+            height: 40 ,
             willChange: 'transform',
             transform: radians.interpolate(r => `translate3d( 0, ${1.4 * Math.sin(r + i * 2 * Math.PI / 5)}px, 0)`)
           }}
