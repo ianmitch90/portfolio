@@ -19,19 +19,19 @@ function OutlinedButtons(props) {
   return (
     <div className='navigation'>
       <div className='navContainer'>
-      <Button component={Link} to='/'  color="secondary" className={classes.button}>
+      <Button component={Link} to='/'  variant='outlined' color="secondary" className={classes.button}>
         <Home/>
       </Button>
 
-      <Button component={Link} to='/profile'  color="secondary" className={classes.button}>
+      <Button component={Link} to='/profile'  variant='outlined' color="secondary" className={classes.button}>
         <Face/>
       </Button>
 
-      <Button component={Link} to='/developer'  color="secondary" className={classes.button}>
+      <Button component={Link} to='/developer'  variant='outlined' color="secondary" className={classes.button}>
         <Code/>
       </Button>
 
-      <Button component={Link} to='/contact'  color="secondary" className={classes.button}>
+      <Button component={Link} to='/contact'  variant='outlined' color="secondary" className={classes.button}>
         <Forum/>
       </Button>
 

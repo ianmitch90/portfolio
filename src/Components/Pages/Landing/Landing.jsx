@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import './Landing.css'
 import Button from '@material-ui/core/Button';
-import { ExpandMore } from '@material-ui/icons/'
+import { ExpandMore, Face, Code, School, Forum} from '@material-ui/icons/'
 import { Parallax, ParallaxLayer } from 'react-spring'
+import {CallToSwipe, Trailing }from './CTA/CTAnimation'
 
+// ok so each layer has its own section, points of intrest lie in how im handling my props in Page. more intrestingly is that im using a terinary operator on line 34 to detect if a map generated has an empty string not to render the CallToSwipe component that was imported from CTAnimation
 
-const Page = ({ offset, caption, first, second, third, fourth, fifth, sixth, gradient, onClick }) => (
+const Page = ({ offset, caption, first, second, third, fourth, fifth, sixth, bgTitle, gradient, onClick, isWelcomePanel}) => (
+ 
   <React.Fragment>
     <Parallax.Layer offset={offset} speed={0.2} onClick={onClick}>
       <div className="slopeBegin" />
@@ -16,10 +19,10 @@ const Page = ({ offset, caption, first, second, third, fourth, fifth, sixth, gra
     </Parallax.Layer>
 
     <Parallax.Layer className="text number" offset={offset} speed={0.3}>
-      <span>0{offset + 1}</span>
+      <span>{bgTitle}</span>
     </Parallax.Layer>
 
-    <Parallax.Layer className="text landingSlideHeader" offset={offset} speed={0.4}>
+    <Parallax.Layer className="text landingSlideHeader" offset={offset} speed={0.4} >
       <span>
         <p style={{ fontSize: 20 }}>{caption}</p>
         <div className={`stripe ${gradient}`} />
@@ -29,8 +32,11 @@ const Page = ({ offset, caption, first, second, third, fourth, fifth, sixth, gra
         <p>{fourth}</p>
         <p>{fifth}</p>
         <p>{sixth}</p>
+        {isWelcomePanel ? <CallToSwipe/> : ''}
       </span>
+      
     </Parallax.Layer>
+    
   </React.Fragment>
 )
 
@@ -46,32 +52,34 @@ export class Landing extends Component {
         
             <Parallax className='heroBackground' ref={ref => (this.parallax = ref)} pages={2}>
 
-            <ParallaxLayer className='heroText' offset={0.1} speed={0} >
+            <ParallaxLayer className='heroText' offset={0} speed={0} onClick={() => this.parallax.scrollTo(1)} >
                 
                 <ParallaxLayer offset={0.1} speed={4.5}>
                   <h1>Ian</h1>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0.3} speed={2}>
+                <ParallaxLayer offset={0.3} speed={3}>
                   <h1>Mitchell</h1>
-                  <Button 
-                  className='CTA blink'
-                  variant='fab' 
-                  color='secondary'
-                  onClick={() => this.parallax.scrollTo(1)}>
-                    <ExpandMore/>
-                  </Button>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={0.5} speed={2.5}>
+                  <Trailing/>
                 </ParallaxLayer>
                 
             </ParallaxLayer>
 
             <ParallaxLayer offset={1}>
                 <Parallax className="container" ref="parallax" pages={5} horizontal scrolling={true}>
-                    <Page className="imgME" offset={0} gradient="pink" caption="Who I Am" first='Developer' second="&" third="Designer" fourth="-Tap or Swipe-" onClick={() => this.scroll(1)}/>
-                    <Page offset={1} gradient="teal" caption="What I Do" first="" second="Development" third="Education" fourth="Freelance" onClick={() => this.scroll(2)} />
-                    <Page offset={2} gradient="tomato" caption="Web Development Specialties" first="Jr Full Stack Dev" second="JS/HTML/CSS/C#" third="Mongo/PostSQL" fourth="React/Redux/MERN"onClick={() => this.scroll(3)}/>
-                  <Page offset={3} gradient="algae" caption="Education" first="University" second="of Houston" third="Computer Science " fourth="- Current" fifth ="The Iron Yard" sixth="Full Stack - 2017"onClick={() => this.scroll(4)}/>
-                    <Page offset={4} gradient="lavender" caption="Contact Me" first="Visit my" second="Contact Page" third="For More" fourth="Information!" onClick={() => this.scroll(0)}/>
+                    <Page className="imgME" offset={0} gradient="pink" caption="Who I Am" first='Developer' second="&" third="Designer" fourth="-" fifth='to begin:' sixth='swipe or tap' onClick={() => this.scroll(1)} bgTitle='Hey there!' isWelcomePanel='things'/>
+
+                    <Page offset={1} gradient="teal" caption="What I Do" first="" second="Development" third="Education" fourth="Freelance" onClick={() => this.scroll(2)} bgTitle='Career' />
+
+                    <Page offset={2} gradient="tomato" caption="Web Development Specialties" first="Jr Full Stack Dev" second="JS/HTML/CSS/C#" third="Mongo/PostSQL" fourth="React/Redux/MERN" onClick={() => this.scroll(3)} bgTitle='Skills' />
+
+                  <Page offset={3} gradient="algae" caption="Education" first="University" second="of Houston" third="Computer Science " fourth="- Current" fifth ="The Iron Yard" sixth="Full Stack - 2017"onClick={() => this.scroll(4)} bgTitle='School' />
+
+                    <Page offset={4} gradient="lavender" caption="Contact Me" first="Visit my" second="Contact Page" third="For More" fourth="Information!" onClick={() => this.scroll(0)} bgTitle='Explore!' />
+
                     </Parallax>
             </ParallaxLayer>
 
