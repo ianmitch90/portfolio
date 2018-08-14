@@ -37,7 +37,7 @@ function Projects(props) {
             Whats Shaking?
           </Typography>
           <Typography>
-            <p>Use U.S. Geological Survay API to show you the most recent seismic activity.</p>
+           Use U.S. Geological Survay API to show you the most recent seismic activity.
           </Typography>
         </CardContent>
         <CardActions>
@@ -60,7 +60,7 @@ function Projects(props) {
             CloudSound Search
           </Typography>
           <Typography>
-            <p>This project uses the SoundCloud API to search for music</p>
+            This project uses the SoundCloud API to search for music
           </Typography>
         </CardContent>
         <CardActions>

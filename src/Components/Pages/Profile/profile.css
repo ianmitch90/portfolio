@@ -30,7 +30,11 @@ however: using css for this in react is taxing on the render and causes jank wit
 .profileHero h1 {
     font-family: 'Waiting for the Sunrise', cursive;
     font-size: 3rem;
-
+}
+.profileHero h2 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 2rem;
+    text-align: center;
 }
 .picContainer{
     display: flex;

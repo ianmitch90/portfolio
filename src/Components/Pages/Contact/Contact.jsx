@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './contact.css'
 import Button from '@material-ui/core/Button';
-import { Mail , ChevronRight, CloudDownload, DateRange, AssignmentInd} from '@material-ui/icons/'
+import { Mail , ChevronRight, CloudDownload, DateRange } from '@material-ui/icons/'
 import resume from '../../../Assets/IanMitchell.pdf'
 
 
@@ -34,9 +34,7 @@ export class Contact extends Component {
             <Button variant='extendedFab' color='inherit' className='contactButtons' target="_blank" rel="noopener noreferrer" href='https://calendly.com/ianmitch90'>
               <DateRange /> <p>Schedule</p>
             </Button>
-            <Button variant='extendedFab' color='secondary' className='contactButtons'>
-              <AssignmentInd /> <p>Hireing?</p>
-            </Button>
+
           </div>
         </div>
       </div>

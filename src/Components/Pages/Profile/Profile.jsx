@@ -18,11 +18,10 @@ export class Profile extends Component {
               <Avatar className='myPic' alt='Ian smiling.' src={facePic} />
             </div>
             <h1>About Me:</h1>
-            <p>Hi there! My names Ian, and i am a Junior Web Developer based out of Houston, TX.
-            My main drive in creating content is to help others.
-            I am currently exploring the Education aspect of being a Web Developer with an amazing community in Houston. 
-            I also participate in contributing to the local and global communities of LGBT+, Gaming, Developer, and Non-Profits, in anyway i can large or small. 
-            Im always learning, using, and developing in new technologies everyday out of my own curiosity.</p>
+            <p>Hi there! My name is Ian, and I am a Junior Web Developer based out of Houston, TX.
+            My main drive in is creating content that helps others.
+            I am currently exploring the educational aspect of being a Web Developer with an amazing community in Houston. 
+            I am passionate about contributing to the local and global communities of the LGBT+, Gaming, Developer, and Non-Profits and am always learning, using, and developing new technologies everyday out of my own curiosity.</p> <br/> <h2>Stay in touch by following me below or by visiting my contact page!</h2>
           </div>
           <div className='socialButtons' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
               <Button href='https://twitter.com/TheShadyGaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
