@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import './Landing.css'
-import Button from '@material-ui/core/Button';
-import { ExpandMore, Face, Code, School, Forum} from '@material-ui/icons/'
 import { Parallax, ParallaxLayer } from 'react-spring'
 import {CallToSwipe, Trailing }from './CTA/CTAnimation'
 
