@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.container > div > div {
+.container>div>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,43 +73,36 @@
 }
 
 .pink {
-  background-image: url('./svg/bank-note.svg'),
-  linear-gradient(to 45deg, deeppink 0%, coral 100%);
-}
-.pinkAccent{
-  background: linear-gradient(to 45deg, deeppink 0%, coral 100%);
-}
-.teal {
-  background-image: url('./svg/endless-clouds.svg'),
-  linear-gradient(to 45deg, SlateBlue 0%, DeepSkyBlue 100%);
-}
-.tealAccent{
-  background: linear-gradient(to 45deg, SlateBlue 0%, DeepSkyBlue 100%);
-}
-.tomato {
-  background-image: url('./svg/wiggle.svg'),
-  linear-gradient(to 45deg, tomato 0%, gold 100%);
-}
-.tomatoAccent{
-  background: linear-gradient(to 45deg, tomato 0%, gold 100%);
+  background-blend-mode: overlay;
+  background-image: url('./svg/bank-note.svg');
+  background-color: coral;
 }
 
+.teal {
+  background-blend-mode: overlay;
+  background-image: url('./svg/endless-clouds.svg');
+  background-color: deepskyblue;
+  ;
+}
+
+.tomato {
+  background-blend-mode: overlay;
+  background-image: url('./svg/wiggle.svg');
+  background-color: gold;
+}
 
 .algae {
-  background-image: url('./svg/overlapping-circles.svg'),
-  linear-gradient(to 45deg, #0097e6 0%, #44bd32 100%);
-}
-.algaeAccent{
-  background: linear-gradient(to 45deg, #0097e6 0%, #44bd32 100%);
+  background-blend-mode: overlay;
+  background-image: url('./svg/overlapping-circles.svg');
+  background-color: #44bd32;
 }
 
 .lavender {
-  background-image: url('./svg/bubbles.svg'),
-  linear-gradient(to 45deg, #dcdde1 0%, #8c7ae6 100%);
+  background-blend-mode: overlay;
+  background-image: url('./svg/bubbles.svg');
+  background-color: #8c7ae6;
 }
-.lavenderAccent{
-  background: linear-gradient(to 45deg, #dcdde1 0%, #8c7ae6 100%);
-}
+
 
 /*
 font-family: 'Poiret One', cursive; default
@@ -118,11 +111,12 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
 */
 
 /* Smartphones (landscape) ----------- */
+
 @media only screen and (min-width: 321px) {
-  .number{
+  .number {
     font-size: 60px;
   }
-  .landingSlideHeader{
+  .landingSlideHeader {
     font-size: 20px;
   }
   .Landing h1 {
@@ -134,47 +128,54 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
 }
 
 /* iPads (landscape) ----------- */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .number{
+  .number {
     font-size: 100px;
   }
-  .landingSlideHeader{
+  .landingSlideHeader {
     font-size: 35px;
   }
   .Landing h1 {
     font-size: 8rem;
   }
 }
+
 /* iPads (portrait) ----------- */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .number{
+  .number {
     font-size: 110px;
   }
-  .landingSlideHeader{
+  .landingSlideHeader {
     font-size: 60px;
   }
   .Landing h1 {
     font-size: 8rem;
   }
 }
+
 /* Desktops and laptops ----------- */
+
 @media only screen and (min-width: 1024px) {
-  .number{
+  .number {
     font-size: 110px;
   }
-  .landingSlideHeader{
+  .landingSlideHeader {
     font-size: 60px;
   }
   .Landing h1 {
     font-size: 8rem;
   }
 }
+
 /* Large screens ----------- */
+
 @media only screen and (min-width: 1824px) {
-  .number{
+  .number {
     font-size: 230px;
   }
-  .landingSlideHeader{
+  .landingSlideHeader {
     font-size: 70px;
   }
   .Landing h1 {
@@ -184,7 +185,6 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
     line-height: 0;
   }
 }
-
 
 .blink {
   -webkit-animation: blink 4s infinite both;
@@ -202,6 +202,7 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
     opacity: 1;
   }
 }
+
 @keyframes blink {
   0% {
     opacity: 1;
