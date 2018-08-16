@@ -82,7 +82,6 @@
   background-blend-mode: overlay;
   background-image: url('./svg/endless-clouds.svg');
   background-color: deepskyblue;
-  ;
 }
 
 .tomato {
@@ -102,7 +101,6 @@
   background-image: url('./svg/bubbles.svg');
   background-color: #8c7ae6;
 }
-
 
 /*
 font-family: 'Poiret One', cursive; default
