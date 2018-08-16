@@ -13,8 +13,6 @@ let failArray = [
 let failImg = failArray[Math.floor(Math.random() * failArray.length)];
 
 let styles = {
-  width: '100%',
-  height: '100vh',
   backgroundImage: `url(${failImg})`,
 }
 
@@ -35,7 +33,7 @@ export class NoMatch extends Component {
       <div className= 'NoMatchContainer' style= {styles}>
         <div className='nomatch'>
           <div className= 'NoMatchHeadline'>
-            <h1 className='flicker-1'>404</h1>
+            <h1>404</h1>
             <h2>Page Not Found</h2>
             <br/>
             {failReply} 

@@ -2,19 +2,15 @@
 
 however: using css for this in react is taxing on the render and causes jank with throttled performance, ill be revising this experience in my performance/test round*/
 
-.profile{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 150vh;
-    background-image: url('../../../Assets/images/coffee.jpeg'),
-    linear-gradient(30deg, #338ed8 0%, #2cbb68 74%);
+.profile {
+    background-image: url('../../../Assets/images/coffee.jpeg'), linear-gradient(30deg, #338ed8 0%, #2cbb68 74%);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     color: white;
+    height: 160vh;
 }
+
 .profileHero {
     display: flex;
     justify-content: center;
@@ -25,34 +21,37 @@ however: using css for this in react is taxing on the render and causes jank wit
     background-repeat: no-repeat;
     font-size: 1em;
     color: white;
-    
 }
-.profileHero h1 {
+
+.profile h1 {
     font-family: 'Waiting for the Sunrise', cursive;
     font-size: 3rem;
 }
+
 .profileHero h2 {
     font-family: 'Waiting for the Sunrise', cursive;
     font-size: 2rem;
     text-align: center;
 }
-.picContainer{
+
+.picContainer {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+
 }
-.profileDesc{
+
+.profileDesc {
     padding: 1rem;
-    width: 50%;
+    width: 75%;
 }
+
 .myPic {
     height: 10rem;
     width: 10rem;
 }
 
 .socialButtons a {
-    margin: 2em;
-    
+    margin-left: 12px;
 }
 
 .socialButtons img {
@@ -60,23 +59,25 @@ however: using css for this in react is taxing on the render and causes jank wit
     height: 100%;
 }
 
-
-
-
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (max-device-width: 480px) {
-
-    .profileDesc{
-            margin: 2rem;
-            padding: 1rem;
-            text-align: center;
+    .profileDesc {
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
     }
     .socialButtons a {
         margin: 5px;
     }
-    .profileHero h1 {
-        font-size: 2rem;
+    .myPic {
+        height: 5rem;
+        width: 5rem;
+    }
+    .profileHero h2 {
+        font-family: 'Waiting for the Sunrise', cursive;
+        font-size: 1rem;
+        text-align: center;
     }
 }
 

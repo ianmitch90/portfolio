@@ -10,8 +10,8 @@ export class Contact extends Component {
   render() {
     return (
       <div className='contactContainer'>
-        <h1>Stay In Touch!</h1>
         <div className='contactMain'>
+        <h1>Stay In Touch!</h1>
           <h2>Email:</h2>
             <Button variant='fab' rel="noopener noreferrer" href= 'mailto:ianmitch90@gmail.com'>
               <Mail/>

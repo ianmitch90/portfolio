@@ -150,10 +150,10 @@
 }
 
 .spinnercontainer {
-  padding-top: 30vh;
+  padding-top: 50%;
   background: #efefef;
   text-align: center;
-  height: 100vh;
+  height: 100%;
 }
 
 @keyframes power {
