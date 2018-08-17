@@ -67,9 +67,9 @@ export class Landing extends Component {
             </ParallaxLayer>
 
             <ParallaxLayer offset={1}>
-              <Parallax className="container" ref="parallax" pages={5} horizontal scrolling={true}>
+              <Parallax className="container" ref="parallax" pages={5} horizontal scrolling={false}>
 
-                <Page offset={0} gradientLine='pinkAccent' gradient="pink" caption="Who I Am" first='Developer' second="&" third="Designer" fourth="-" fifth='to begin:' sixth='swipe or tap' onClick={() => this.scroll(1)} bgTitle='Hey there' isWelcomePanel='things' />
+                <Page offset={0} gradientLine='pinkAccent' gradient="pink" caption="Who I Am" first='Developer' second="&" third="Designer" fourth="-" fifth='tap' sixth='to begin' onClick={() => this.scroll(1)} bgTitle='Hey there' isWelcomePanel='things' />
 
                 <Page offset={1} gradientLine='tealAccent' gradient="teal" caption="What I Do" first="" second="Development" third="Education" fourth="Freelance" onClick={() => this.scroll(2)} bgTitle='Career' />
 
@@ -77,7 +77,7 @@ export class Landing extends Component {
 
                 <Page offset={3} gradientLine='algaeAccent' gradient="algae" caption="Education" first="University" second="of Houston" third="Computer Science " fourth="- Current" fifth="The Iron Yard" sixth="Full Stack - 2017" onClick={() => this.scroll(4)} bgTitle='School' />
 
-                <Page offset={4} gradientLine='lavenderAccent' gradient="lavender" caption="Contact Me" first="Visit my" second="Contact Page" third="For More" fourth="Information!" onClick={() => this.scroll(0)} bgTitle='Explore!' />
+                <Page offset={4} gradientLine='lavenderAccent' gradient="lavender" caption="Learn More" first="Scroll up" second="to explore" third="-" fourth="tap to view again" onClick={() => this.scroll(0)} bgTitle='Explore!' />
 
               </Parallax>
             </ParallaxLayer>

@@ -39,11 +39,11 @@ class App extends Component {
       <BrowserRouter>
         <Layout>
          <Switch>
-           <Route exact path='/' component={Landing}/>
-           <Route path='/contact' component={Contact}/>
-           <Route path='/developer' component={Developer}/>
-           <Route path='/profile' component={Profile}/>
-           <Route component= {NoMatch}/>
+          <Route role="button" aria-label='Home' exact path='/' component={Landing}/>
+          <Route role="button" aria-label='Contact' path='/contact' component={Contact}/>
+          <Route role="button" aria-label='Developer' path='/developer' component={Developer}/>
+          <Route role="button" aria-label='Profile' path='/profile' component={Profile}/>
+          <Route component= {NoMatch}/>
          </Switch>
         </Layout>
       </BrowserRouter>
