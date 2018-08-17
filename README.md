@@ -40,18 +40,21 @@ Simply run the following from terminal:
 yarn test
 ```
 
-### Break down into end to end tests
-
-General Testing:
-
-```
-API calls and proxy request checks
-```
 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Current package.json Settings are as follows: 
+```
+react-scripts build && mv build/index.html build/200.html
+```
+
+Please edit it to the following for local production version if 200.html is not supported:
+```
+react-scripts build
+```
+note that browserHistory becomes unavailable when trying to use index.html method on some hosting services
+
 
 ## Built With
 
