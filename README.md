@@ -19,7 +19,7 @@ Running and installing app:
 To install and update node packages:
 
 ```
-yarn
+yarn install
 ```
 
 To start the Project localy in development enviorment:
@@ -53,7 +53,7 @@ Please edit it to the following for local production version if 200.html is not 
 ```
 react-scripts build
 ```
-note that browserHistory becomes unavailable when trying to use index.html method on some hosting services
+Note -- browserHistory becomes unavailable when trying to use index.html method on some hosting services
 
 
 ## Built With
