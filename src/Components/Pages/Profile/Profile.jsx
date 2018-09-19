@@ -7,11 +7,27 @@ import Medium from './svg/medium.svg'
 import Github from './svg/github.svg'
 import facePic from '../../../Assets/images/imgface-min.png'
 import Button from '@material-ui/core/Button';
+import videoloop from './OKKKK.mp4'
 //TODO: so for the intrest hero section: use react spring to toggle a sliding button to terenary reveal current learning or building
 export class Profile extends Component {
   render() {
     return (
       <div className= 'profile'>
+      <video autoPlay loop muted>
+          <source
+          src={videoloop} type="video/mp4" />
+      </video>
+        <div className="profileHeroText">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <mask id="mask" x="0" y="0" width="100%" height="100%" fill='f5f5f5' >
+                <rect x="0" y="0" width="100%" height="100%" />
+                <text x="50" y="50">all things Ian</text>
+              </mask>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" />
+          </svg>
+        </div>
         <div className='profileHero'>
           <div className='profileDesc'>
             <div className='picContainer'>

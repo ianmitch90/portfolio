@@ -1,6 +1,7 @@
 /* so this is me working WITH the content since i know the background image is changes its look due to the screen width i just keep the content to the left and let the background image be my compass, only pushing the information in the areas that i need it to be. less is more sometimes and the views are somewhat consistant without too much styling. */
 
 .contactContainer {
+    height: 100%;
     background-image: url('../../../Assets/images/everygirlboss-com-630548-unsplash.jpg'),
     linear-gradient(300deg, #5960a0 0%, #1edad1 100%);
     background-size: cover;

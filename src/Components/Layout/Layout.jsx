@@ -8,7 +8,8 @@ export class Layout extends Component {
 
 
     return (
-      <div>
+      <div className='layout'>
+      
         <Heading/>
 
         {this.props.children}

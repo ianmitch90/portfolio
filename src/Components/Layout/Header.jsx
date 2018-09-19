@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import { Face, Home, Code, Forum } from '@material-ui/icons/'
-
+import trianglelogo from './PenroseTriangle.svg';
 const styles = theme => ({
   button: {
     margin: theme.spacing.unit,
@@ -18,23 +18,23 @@ function OutlinedButtons(props) {
   const { classes } = props;
   return (
     <div className='navigation'>
+      <img src={trianglelogo} alt="IM"/>
       <div className='navContainer'>
-      <Button component={Link} to='/' variant='outlined' color="secondary" className={classes.button}>
-        <Home/>
-      </Button>
+        <Button component={Link} to='/' variant='outlined' color="secondary" className={classes.button}>
+          <Home />
+        </Button>
 
-      <Button component={Link} to='/profile' variant='outlined' color="secondary" className={classes.button}>
-        <Face/>
-      </Button>
+        <Button component={Link} to='/profile' variant='outlined' color="secondary" className={classes.button}>
+          <Face />
+        </Button>
 
-      <Button component={Link} to='/developer' variant='outlined' color="secondary" className={classes.button}>
-        <Code/>
-      </Button>
+        <Button component={Link} to='/developer' variant='outlined' color="secondary" className={classes.button}>
+          <Code />
+        </Button>
 
-      <Button component={Link} to='/contact' variant='outlined' color="secondary" className={classes.button}>
-        <Forum/>
-      </Button>
-
+        <Button component={Link} to='/contact' variant='outlined' color="secondary" className={classes.button}>
+          <Forum />
+        </Button>
       </div>
 
 

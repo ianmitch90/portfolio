@@ -1,7 +1,7 @@
 /* my intent for the landing is to let my name be the orientating content with a bit of engagemnt when going to a snapshot, where you can get a breif overview of me and the rest of the site without going to a diffrent page. */
 
 .heroBackground {
-  background-image: url("../../../Assets/images/jazmin-quaynor-97777-unsplash.jpg"), linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  background-image: url("../../../Assets/images/landingbg.jpeg"), linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
   background-size: cover !important;
   background-position: center !important;
   background-blend-mode: overlay;
