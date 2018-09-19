@@ -18,7 +18,6 @@ function OutlinedButtons(props) {
   const { classes } = props;
   return (
     <div className='navigation'>
-      <img src={trianglelogo} alt="IM"/>
       <div className='navContainer'>
         <Button component={Link} to='/' variant='outlined' color="secondary" className={classes.button}>
           <Home />
