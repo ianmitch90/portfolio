@@ -121,7 +121,6 @@ export class Developer extends Component {
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
             <h1>Projects:</h1>
             <Projects />
-            <h2 onClick={() => this.parallax.scrollTo(0)}>-Back to Top-</h2>
           </Parallax.Layer>
         </Parallax>
 
