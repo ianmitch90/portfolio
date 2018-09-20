@@ -46,7 +46,7 @@ function Projects(props) {
             Git Hub
           </Button>
           <Button size="small" color="primary" target="_blank" rel="noopener noreferrer" href='https://ianmitch90.github.io/reactearthquake/'>
-            Learn More
+            Visit
           </Button>
         </CardActions>
       </Card>
@@ -69,7 +69,7 @@ function Projects(props) {
             Git Hub
           </Button>
           <Button size="small" color="primary" target="_blank" rel="noopener noreferrer" href= 'https://ianmitch90.github.io/soundcloud/'>
-            Learn More
+            Visit
           </Button>
         </CardActions>
       </Card>
@@ -92,7 +92,7 @@ function Projects(props) {
             Git Hub
           </Button>
           <Button size="small" color="primary" target="_blank" rel="noopener noreferrer" href='https://ianmitch90.github.io/theGreenGysahl/'>
-            Learn More
+            Visit
           </Button>
         </CardActions>
       </Card>
