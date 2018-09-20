@@ -15,7 +15,7 @@ import comp from '../../../Assets/images/comp.jpeg';
 const styles = {
   card: {
     maxWidth: 345,
-    margin: '5px'
+    height: '100%'
   },
   media: {
     height: 0,
