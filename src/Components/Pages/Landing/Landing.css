@@ -1,4 +1,3 @@
-/* my intent for the landing is to let my name be the orientating content with a bit of engagemnt when going to a snapshot, where you can get a breif overview of me and the rest of the site without going to a diffrent page. */
 
 .heroBackground {
   background-image: url("../../../Assets/images/landingbg.jpeg"), linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
@@ -129,12 +128,15 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   .number {
     font-size: 60px;
   }
+
   .landingSlideHeader {
     font-size: 20px;
   }
+
   .Landing h1 {
     font-size: 4rem;
   }
+
   .text {
     line-height: 1px;
   }
@@ -146,9 +148,11 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   .number {
     font-size: 100px;
   }
+
   .landingSlideHeader {
     font-size: 35px;
   }
+
   .Landing h1 {
     font-size: 8rem;
   }
@@ -160,9 +164,11 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   .number {
     font-size: 110px;
   }
+
   .landingSlideHeader {
     font-size: 60px;
   }
+
   .Landing h1 {
     font-size: 8rem;
   }
@@ -174,9 +180,11 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   .number {
     font-size: 110px;
   }
+
   .landingSlideHeader {
     font-size: 60px;
   }
+
   .Landing h1 {
     font-size: 8rem;
   }
@@ -188,12 +196,15 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   .number {
     font-size: 230px;
   }
+
   .landingSlideHeader {
     font-size: 70px;
   }
+
   .Landing h1 {
     font-size: 8rem;
   }
+
   .text {
     line-height: 0;
   }
@@ -208,9 +219,11 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }
@@ -220,9 +233,11 @@ font-family: 'Waiting for the Sunrise', cursive;  accents
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.2;
   }
+
   100% {
     opacity: 1;
   }

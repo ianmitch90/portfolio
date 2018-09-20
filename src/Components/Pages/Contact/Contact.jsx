@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './contact.css'
 import Button from '@material-ui/core/Button';
-import { Mail , ChevronRight, CloudDownload, DateRange } from '@material-ui/icons/'
+import { Mail, ChevronRight, CloudDownload, DateRange } from '@material-ui/icons/'
 import resume from '../../../Assets/IanMitchell.pdf'
 
 
@@ -11,21 +11,21 @@ export class Contact extends Component {
     return (
       <div className='contactContainer'>
         <div className='contactMain'>
-        <h1>Stay In Touch!</h1>
+          <h1>Stay In Touch!</h1>
           <h2>Email:</h2>
-            <Button variant='fab' rel="noopener noreferrer" href= 'mailto:ianmitch90@gmail.com'>
-              <Mail/>
-            </Button>
+          <Button variant='fab' rel="noopener noreferrer" href='mailto:ianmitch90@gmail.com'>
+            <Mail />
+          </Button>
           <h2>Phone:</h2>
-            <p>(832) 704-6499</p>
+          <p>(832) 704-6499</p>
           <h2>Linkedn:</h2>
-          <Button variant='fab' color= 'inherit' className= 'goButtonGreen' target="_blank" rel="noopener noreferrer" href= 'https://www.linkedin.com/in/ianmitch90/'>
-              <ChevronRight/>
-            </Button>
+          <Button variant='fab' color='inherit' className='goButtonGreen' target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/ianmitch90/'>
+            <ChevronRight />
+          </Button>
           <h2>GitHub:</h2>
-          <Button variant='fab' color= 'inherit' className= 'goButtonGreen' target="_blank" rel="noopener noreferrer" href= 'https://github.com/ianmitch90'>
-              <ChevronRight/>
-            </Button>
+          <Button variant='fab' color='inherit' className='goButtonGreen' target="_blank" rel="noopener noreferrer" href='https://github.com/ianmitch90'>
+            <ChevronRight />
+          </Button>
 
           <div className='contactButtonsContainer'>
             <Button variant='extendedFab' color='primary' className='contactButtons' href={resume} download='Ian Mitchell'>
@@ -38,7 +38,7 @@ export class Contact extends Component {
           </div>
         </div>
       </div>
-      
+
 
     )
   }

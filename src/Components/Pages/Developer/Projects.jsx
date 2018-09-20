@@ -38,7 +38,7 @@ function Projects(props) {
             Whats Shaking?
           </Typography>
           <Typography>
-           Use U.S. Geological Survay API to show you the most recent seismic activity.
+            Use U.S. Geological Survay API to show you the most recent seismic activity.
           </Typography>
         </CardContent>
         <CardActions>
@@ -65,10 +65,10 @@ function Projects(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary" target="_blank" rel="noopener noreferrer" href= 'https://github.com/ianmitch90/soundcloud'>
+          <Button size="small" color="primary" target="_blank" rel="noopener noreferrer" href='https://github.com/ianmitch90/soundcloud'>
             Git Hub
           </Button>
-          <Button size="small" color="primary" target="_blank" rel="noopener noreferrer" href= 'https://ianmitch90.github.io/soundcloud/'>
+          <Button size="small" color="primary" target="_blank" rel="noopener noreferrer" href='https://ianmitch90.github.io/soundcloud/'>
             Visit
           </Button>
         </CardActions>

@@ -6,7 +6,7 @@ import Spinner from './Spinner'
 import Loadable from 'react-loadable'
 
 const Landing = Loadable({
-  loader: () => import ('./Pages/Landing/Landing'),
+  loader: () => import('./Pages/Landing/Landing'),
   loading: Spinner,
 });
 
@@ -36,17 +36,17 @@ class App extends Component {
   render() {
     return (
       <div className="AppContainer">
-      <BrowserRouter>
-        <Layout>
-         <Switch>
-          <Route role="button" aria-label='Home' exact path='/' component={Landing}/>
-          <Route role="button" aria-label='Contact' path='/contact' component={Contact}/>
-          <Route role="button" aria-label='Developer' path='/developer' component={Developer}/>
-          <Route role="button" aria-label='Profile' path='/profile' component={Profile}/>
-          <Route component= {NoMatch}/>
-         </Switch>
-        </Layout>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Layout>
+            <Switch>
+              <Route role="button" aria-label='Home' exact path='/' component={Landing} />
+              <Route role="button" aria-label='Contact' path='/contact' component={Contact} />
+              <Route role="button" aria-label='Developer' path='/developer' component={Developer} />
+              <Route role="button" aria-label='Profile' path='/profile' component={Profile} />
+              <Route component={NoMatch} />
+            </Switch>
+          </Layout>
+        </BrowserRouter>
       </div>
     );
   }

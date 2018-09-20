@@ -4,11 +4,10 @@ export class Spinner extends Component {
   render() {
     return (
       <div className='spinnercontainer'>
-            <div className="battery">
-                <div className="liquid"></div>
-            </div>
-
-            <h5>Loading</h5>
+        <div className="battery">
+          <div className="liquid"></div>
+        </div>
+        <h5>Loading</h5>
       </div>
     )
   }

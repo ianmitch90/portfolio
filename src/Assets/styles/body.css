@@ -2,9 +2,10 @@
   font-family: "Poiret One", cursive;
 }
 
-html, body, #root, .AppContainer, .layout {
+html,
+body,
+#root,
+.AppContainer,
+.layout {
   height: 100%;
 }
-
-
-

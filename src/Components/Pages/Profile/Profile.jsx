@@ -7,18 +7,18 @@ import Medium from './svg/medium.svg'
 import Github from './svg/github.svg'
 import facePic from '../../../Assets/images/imgface-min.png'
 import Button from '@material-ui/core/Button';
-import videoloop from './OKKKK.webm'
+import videoloop from './OKKKK.mp4'
 import heysvg from './svg/hey.svg';
 import loopbackup from './poster.jpeg'
 
 export class Profile extends Component {
   render() {
     return (
-      <div className= 'profile'>
+      <div className='profile'>
         <video preload='true' poster={loopbackup} autoPlay loop muted>
           <source
-          src={videoloop} type="video/webm" />
-      </video>
+            src={videoloop} type="video/mp4" />
+        </video>
         <div className="profileHeroText">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
             <defs>
@@ -32,9 +32,9 @@ export class Profile extends Component {
         </div>
         <div className='profileHero'>
           <div className='picContainer'>
-            <Avatar className='myPic' alt='Ian smiling.' src={facePic}/>
+            <Avatar className='myPic' alt='Ian smiling.' src={facePic} />
           </div>
-          <img src={heysvg} alt="hey there!" className="heythere"/>
+          <img src={heysvg} alt="hey there!" className="heythere" />
           <div className='profileDesc'>
             <h1>About Me:</h1>
             <p>Hi there! My name is Ian, and I am a Junior Web Developer based out of Houston, TX.
@@ -43,18 +43,18 @@ export class Profile extends Component {
             I am passionate about contributing to the local and global communities of the LGBT+, Gaming, Developer, and Non-Profits and am always learning, using, and developing new technologies everyday out of my own curiosity.</p> <h2>Stay in touch by following me below or by visiting my contact page!</h2>
           </div>
           <div className='socialButtons' >
-              <Button href='https://twitter.com/TheShadyGaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                <img alt='twiter logo' src={Twitter} />
-              </Button>
-              <Button href='https://www.twitch.tv/theshadygaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                <img alt='twitch logo' src={Twitch} />
-              </Button>
-              <Button href='https://medium.com/@ianmitch90' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                <img alt='medium logo' src={Medium} />
-              </Button>
-              <Button href='https://github.com/ianmitch90/' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
-                <img alt='github logo' src={Github} />
-              </Button>
+            <Button href='https://twitter.com/TheShadyGaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
+              <img alt='twiter logo' src={Twitter} />
+            </Button>
+            <Button href='https://www.twitch.tv/theshadygaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
+              <img alt='twitch logo' src={Twitch} />
+            </Button>
+            <Button href='https://medium.com/@ianmitch90' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
+              <img alt='medium logo' src={Medium} />
+            </Button>
+            <Button href='https://github.com/ianmitch90/' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
+              <img alt='github logo' src={Github} />
+            </Button>
           </div>
         </div>
       </div>

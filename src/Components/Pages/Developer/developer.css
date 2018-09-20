@@ -1,12 +1,13 @@
-
 .devContainer {
     color: white;
 }
+
 .devContainer h1 {
     margin: 0;
     font-size: 3rem;
     font-family: 'Megrim', cursive;
 }
+
 .devContainer h2 {
     margin-top: 2rem;
     font-size: 2rem;
@@ -18,7 +19,7 @@
     justify-content: center;
     align-items: center;
     background-image: url('../../../Assets/images/nothingtosee.jpeg'),
-    linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+        linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover !important;
@@ -33,6 +34,7 @@
     grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
     grid-auto-flow: dense;
 }
+
 .languagesContainer img {
     height: 5rem;
 }
@@ -49,7 +51,7 @@
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: hard-light;
-    
+
 }
 
 
@@ -71,15 +73,16 @@
 
 }
 
-.projectCardContainer{
+.projectCardContainer {
     display: grid;
     grid-gap: 2px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;
 }
+
 .devMainBG {
     background-image: linear-gradient(30deg, #353b48 0%, #273c75 100%);
-    
+
 }
 
 .devMiddleBG {
@@ -115,18 +118,22 @@
         font-size: 1rem;
         font-family: 'Megrim', cursive;
     }
+
     .devContainer p {
         font-size: 1rem;
     }
+
     .eduExpDesc,
     .eduExpDesc p {
         margin: 1rem;
         padding: 0;
     }
+
     .devLanguagesIcons img {
         height: 3em;
         margin: 1em;
     }
+
     .projectCardContainer p {
         font-size: 12px;
     }
@@ -135,36 +142,36 @@
 /* Smartphones (landscape) ----------- */
 
 @media only screen and (min-width: 320px) and (max-device-width: 768px) {
-        .devContainer h1 {
-            margin: 0;
-            font-size: 2rem;
-            font-family: 'Megrim', cursive;
-        }
+    .devContainer h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-family: 'Megrim', cursive;
+    }
 
-        .devContainer h2 {
-            margin-top: 0;
-            font-size: 1rem;
-            font-family: 'Megrim', cursive;
-        }
+    .devContainer h2 {
+        margin-top: 0;
+        font-size: 1rem;
+        font-family: 'Megrim', cursive;
+    }
 
-        .devContainer p {
-            font-size: 1rem;
-        }
+    .devContainer p {
+        font-size: 1rem;
+    }
 
-        .eduExpDesc,
-        .eduExpDesc p {
-            margin: 0.5rem;
-            padding: 0;
-        }
+    .eduExpDesc,
+    .eduExpDesc p {
+        margin: 0.5rem;
+        padding: 0;
+    }
 
-        .devLanguagesIcons img {
-            height: 2.5em;
-            margin: 1em;
-        }
+    .devLanguagesIcons img {
+        height: 2.5em;
+        margin: 1em;
+    }
 
-        .projectCardContainer p {
-            font-size: 12px;
-        }
+    .projectCardContainer p {
+        font-size: 12px;
+    }
 }
 
 
@@ -174,47 +181,49 @@
 /* iPhone 5 (landscape)----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-        .devContainer h1 {
-            margin: 0;
-            font-size: 2rem;
-            font-family: 'Megrim', cursive;
-        }
+    .devContainer h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-family: 'Megrim', cursive;
+    }
 
-        .devContainer h2 {
-            margin-top: 0;
-            font-size: 1rem;
-            font-family: 'Megrim', cursive;
-        }
+    .devContainer h2 {
+        margin-top: 0;
+        font-size: 1rem;
+        font-family: 'Megrim', cursive;
+    }
 
-        .devContainer p {
-            font-size: 1rem;
-        }
+    .devContainer p {
+        font-size: 1rem;
+    }
 
-        .eduExpDesc,
-        .eduExpDesc p {
-            margin: 0.3rem;
-            font-size: 10px;
-            padding: 0;
-        }
+    .eduExpDesc,
+    .eduExpDesc p {
+        margin: 0.3rem;
+        font-size: 10px;
+        padding: 0;
+    }
 
-        .devLanguagesIcons img {
-            height: 2em;
+    .devLanguagesIcons img {
+        height: 2em;
 
-        }
-        .devLanguagesIcons {
-            height: 1.7em;
-        }
-        .projectCardContainer p {
-            font-size: 5px;
-        }
+    }
+
+    .devLanguagesIcons {
+        height: 1.7em;
+    }
+
+    .projectCardContainer p {
+        font-size: 5px;
+    }
 
 }
 
 /* iPhone 5 (portrait)----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-        .devLanguagesIcons img {
-            height: 2em;
-            margin-top: 0;
-        }
+    .devLanguagesIcons img {
+        height: 2em;
+        margin-top: 0;
+    }
 }
