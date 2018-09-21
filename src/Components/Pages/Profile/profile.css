@@ -1,6 +1,12 @@
 .profile {
     color: white;
-    height: 100%;
+    background-image: url('https://media.giphy.com/media/3gGBN3q97tUE8/giphy.gif'),
+    linear-gradient(120deg, #4158D0 0%, #C850C0 70%, #9599e2 70%, #9599e2 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
 }
 
 .profileHero {
@@ -81,6 +87,7 @@ svg>rect {
 }
 
 .myPic {
+    position: initial !important;
     height: 15rem;
     width: 15rem;
 }

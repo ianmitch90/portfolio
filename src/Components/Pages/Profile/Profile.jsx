@@ -7,18 +7,13 @@ import Medium from './svg/medium.svg'
 import Github from './svg/github.svg'
 import facePic from '../../../Assets/images/imgface-min.png'
 import Button from '@material-ui/core/Button';
-import videoloop from './OKKKK.mp4'
 import heysvg from './svg/hey.svg';
-import loopbackup from './poster.jpeg'
+
 
 export class Profile extends Component {
   render() {
     return (
       <div className='profile'>
-        <video preload='true' poster={loopbackup} autoPlay loop muted>
-          <source
-            src={videoloop} type="video/mp4" />
-        </video>
         <div className="profileHeroText">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
             <defs>
