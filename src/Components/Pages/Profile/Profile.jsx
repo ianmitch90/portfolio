@@ -38,7 +38,7 @@ export class Profile extends Component {
             I am passionate about contributing to the local and global communities of the LGBT+, Gaming, Developer, and Non-Profits and am always learning, using, and developing new technologies everyday out of my own curiosity.</p> <h2>Stay in touch by following me below or by visiting my contact page!</h2>
           </div>
           <div className='socialButtons' >
-            <Button href='https://twitter.com/TheShadyGaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
+            <Button href='https://twitter.com/Ivanshadee' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
               <img alt='twiter logo' src={Twitter} />
             </Button>
             <Button href='https://www.twitch.tv/theshadygaymer' className='socialIcons' color='primary' variant='fab' target="_blank" rel="noopener noreferrer">
