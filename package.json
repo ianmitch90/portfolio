@@ -39,14 +39,5 @@
     "tailwind-variants": "^0.1.20",
     "tailwindcss": "3.4.3",
     "typescript": "5.0.4"
-  },
-  "devDependencies": {
-    "git-scripts": "^0.2.1",
-    "surge": "^0.23.1"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "surge --project ./ --ianmitch.surge.sh"
-    }
   }
 }
