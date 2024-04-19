@@ -88,7 +88,7 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.discord} aria-label="Discord">
             <DiscordIcon className="text-default-500" />
           </Link> */}
-          <Link isExternal href={siteConfig.links.github} aria-label="Github">
+          <Link isExternal href={siteConfig.links.linkdin} aria-label="Github">
             <LinkdInIcon className="text-default-500" />
           </Link>
           <Link isExternal href={siteConfig.links.github} aria-label="Github">
