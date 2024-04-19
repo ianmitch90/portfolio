@@ -35,6 +35,7 @@ export const siteConfig = {
   links: {
     github: "https://github.com/ianmitch90",
     linkdin: "https://www.linkedin.com/in/ianmitch90",
+    sponsor: "",
   },
   projects: [
     {
